@@ -22,8 +22,8 @@ export default {
   z-index: 1040;
   top: 0;
   left: 0;
-  height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100vw;
   animation: background 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19) both;
   cursor: pointer;

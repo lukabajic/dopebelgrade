@@ -237,15 +237,15 @@ export default {
   z-index: 1040;
   top: 0;
   right: 0;
-  height: calc(var(--vh, 1vh) * 100);
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width: 100%;
   max-width: 54rem;
   background: #ffffff;
 
   padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
     env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-    
+
   &__close {
     position: absolute;
     z-index: 1050;
@@ -279,13 +279,13 @@ export default {
 }
 
 .IndexPage {
-  min-height: calc(var(--vh, 1vh) * 100);
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
 
   &__banner {
     position: relative;
-    height: calc(var(--vh, 1vh) * 100);
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     width: 100vw;
 
     video {

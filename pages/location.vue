@@ -28,8 +28,8 @@ export default {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(var(--vh, 1vh) * 100);
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   padding-top: 8rem;
 }
 </style>

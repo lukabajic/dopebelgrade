@@ -157,10 +157,10 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    height: calc(var(--vh, 1vh) * 90);
     height: 90vh;
-    width: calc(var(--vh, 1vh) * 90);
+    height: calc(var(--vh, 1vh) * 90);
     width: 90vh;
+    width: calc(var(--vh, 1vh) * 90);
 
     @media only screen and (max-width: 992px) {
       height: 100vw;
@@ -208,8 +208,8 @@ export default {
 
     @media only screen and (max-width: 992px) {
       width: 20vw;
-      height: calc(var(--vh, 1vh) * 100);
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
   }
 

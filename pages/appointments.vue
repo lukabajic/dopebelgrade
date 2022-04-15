@@ -33,8 +33,8 @@ export default {
 
 <style lang="scss">
 .AppointmentsPage {
-  min-height: calc(var(--vh, 1vh) * 100);
   min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
 
   display: flex;
   flex-direction: column;

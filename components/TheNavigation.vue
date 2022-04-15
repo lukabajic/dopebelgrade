@@ -181,8 +181,8 @@ export default {
       z-index: 1040;
       top: 0;
       left: 0;
-      height: calc(var(--vh, 1vh) * 100);
       height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
       width: 85vw;
       background-color: var(--orange);
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26),
