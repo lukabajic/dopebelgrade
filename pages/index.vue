@@ -243,6 +243,9 @@ export default {
   max-width: 54rem;
   background: #ffffff;
 
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+    
   &__close {
     position: absolute;
     z-index: 1050;
