@@ -1,0 +1,39 @@
+<template>
+  <main class="main">
+    <the-navigation />
+    <nuxt />
+    <the-footer />
+  </main>
+</template>
+
+<script>
+export default {
+  name: 'default',
+
+  data() {
+    return {
+      vhTimer: null,
+    }
+  },
+
+  mounted() {
+    this.setVHUnit()
+    window.addEventListener('resize', this.setVHUnit)
+  },
+
+  destroyed() {
+    window.removeEventListener('resize', this.setVHUnit)
+    document.documentElement.style.removeProperty('--vh')
+  },
+
+  methods: {
+    setVHUnit() {
+      clearTimeout(this.vhTimer)
+      this.vhTimer = setTimeout(() => {
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+      }, 300)
+    },
+  },
+}
+</script>
