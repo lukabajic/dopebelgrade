@@ -23,7 +23,7 @@
         <button class="YClients__close" @click="toggleBooker">
           <img src="~/assets/icons/close-outline.svg" alt="Close" />
         </button>
-        <iframe src="https://n737757.yclients.com/" frameborder="0"></iframe>
+        <iframe src="https://n737757.alteg.io/" frameborder="0"></iframe>
       </div>
 
       <div class="IndexPage__cover">
