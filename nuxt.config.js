@@ -14,6 +14,16 @@ export default {
           'dope belgrade, dope, belgrade, appointment, cuts and shaves, shaves, cuts, keep it fresh, barber, shop, barber shop, hair, haircut, beard, shaving,trimming, shaves, gillette, hair',
       },
       { name: 'format-detection', content: 'telephone=no' },
+      {
+        hid: 'theme-color',
+        name: 'theme-color', 
+        content: 'black-translucent'
+      },
+      {
+        hid: 'apple-mobile-web-app-status-bar-style',
+        name: 'apple-mobile-web-app-status-bar-style', 
+        content: 'black-translucent'
+      }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
