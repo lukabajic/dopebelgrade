@@ -11,7 +11,10 @@
         <img :src="prices" alt="Cenovnik" />
       </div>
 
-      <base-button :on-click="toggleBooker" class-name="TeamMembers__button"
+      <base-button     
+        :router-link="!$device.isDesktop"
+        to="/appointments" 
+        :on-click="toggleBooker" class-name="TeamMembers__button"
         >Book Now</base-button
       >
     </div>

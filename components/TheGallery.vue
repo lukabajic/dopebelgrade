@@ -39,7 +39,11 @@
           /></button
       ></template>
 
-      <base-button :on-click="toggleBooker" class="TheGallery__book-now"
+      <base-button 
+        :router-link="!$device.isDesktop"
+          to="/appointments" 
+          :on-click="toggleBooker" 
+          class="TheGallery__book-now"
         >Book Now</base-button
       >
     </div>

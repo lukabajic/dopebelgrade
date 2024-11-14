@@ -35,17 +35,17 @@
         }"
       >
         <li v-for="(l, i) in links" :key="i" class="TheNavigation__item">
-          <nuxt-link v-if="l.to" class="hvr hvr-grow" :to="l.to">{{
-            l.text
-          }}</nuxt-link>
-          <a v-if="l.href" class="hvr hvr-grow" :href="l.href">{{ l.text }}</a>
           <button
-            v-if="l.onClick"
+            v-if="l.onClick && $device.isDesktop"
             class="hvr hvr-grow"
             @click="dynamicFn(l.onClick)"
           >
             {{ l.text }}
           </button>
+          <nuxt-link v-else-if="l.to" class="hvr hvr-grow" :to="l.to">{{
+            l.text
+          }}</nuxt-link>
+          <a v-else-if="l.href" class="hvr hvr-grow" :href="l.href">{{ l.text }}</a>
         </li>
       </ul>
 
@@ -72,6 +72,8 @@
 
         <base-button
           header
+          :router-link="!$device.isDesktop"
+          to="/appointments"
           :on-click="toggleBooker"
           class-name="TheNavigation__book-now"
           >Book Now</base-button
@@ -95,7 +97,7 @@ export default {
         { text: 'Home', to: '/', onlyMoblie: true },
         { text: 'About', href: '#about' },
         { text: 'Gallery', href: '#gallery' },
-        { text: 'Book Now', onClick: 'toggleBooker' },
+        { text: 'Book Now', onClick: 'toggleBooker', to: '/appointments' },
         { text: 'Contact', href: 'tel:+38162776911' },
       ],
     }

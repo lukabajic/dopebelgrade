@@ -13,6 +13,8 @@
       </template>
 
       <base-button
+        :router-link="!$device.isDesktop"
+        to="/appointments"
         :on-click="toggleBooker"
         class-name="AboutDope__button"
         >Book Now</base-button
