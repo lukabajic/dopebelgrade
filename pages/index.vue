@@ -20,9 +20,6 @@
 
       <base-backdrop v-if="bookerOpen" @backdrop-clicked="toggleBooker" />
       <div v-if="bookerOpen" class="YClients">
-        <button class="YClients__close" @click="toggleBooker">
-          <img src="~/assets/icons/close-outline.svg" alt="Close" />
-        </button>
         <iframe src="https://n737757.alteg.io/" frameborder="0"></iframe>
       </div>
 
@@ -286,7 +283,7 @@ export default {
     position: relative;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    width: 100vw;
+    width: 100%;
 
     video {
       object-fit: cover;
