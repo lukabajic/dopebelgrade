@@ -62,7 +62,16 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        autoprefixer: {},
+      },
+      postcssOptions: {
+        config: false,
+      },
+    },
+  },
 
   device: {
     refreshOnResize: true,
